@@ -1,5 +1,7 @@
 # Sparse R-CNN from Scratch on Synthetic Shapes
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MmdMhdi-sh/sparse-rcnn/blob/main/reproduce_in_colab.ipynb)
+
 A compact PyTorch implementation of **Sparse R-CNN** (Sun et al., 2021): an end-to-end object detector with **20 learnable proposal boxes** instead of dense anchors, **dynamic instance interaction** heads, three-stage iterative box refinement and a Hungarian-matched set loss, so no NMS is needed. It is trained on a synthetic dataset of coloured circles, squares and triangles, so the whole experiment grid trains in about 35 minutes on a free Colab T4. Results are reported as COCO mAP on a separate 1,000-image test set, as mean ± std over 3 seeds, with the checkpoint chosen on a validation split.
 
 **In short:** the detector reaches **0.762 ± 0.020 mAP@[.5:.95]** (0.898 mAP@.5). The FPN adds 8 mAP points over a single 16×16 feature map, almost all of it from tighter boxes. Iterative refinement does most of the work, taking mAP from 0.17 after stage 1 to 0.76 after stage 3. The "learnable" proposal boxes barely move during training.
@@ -95,7 +97,7 @@ python src/run_experiments.py --only more_data   # optional: 4,900 training imag
 python src/run_experiments.py --smoke            # 1 seed, 2 tiny epochs: a quick CPU check
 ```
 
-No GPU? Open [`colab_run.ipynb`](colab_run.ipynb) in Google Colab with a T4 runtime.
+To reproduce everything in the browser, open [`reproduce_in_colab.ipynb`](reproduce_in_colab.ipynb) with the badge above. The full grid takes about 35 minutes on a free T4.
 
 Outputs go to `results/`: `metrics.json` (every run, with per-epoch history, test metrics and proposal boxes), `results_table.md` and `figures/`. Checkpoints go to `results/checkpoints/`, which is git-ignored.
 
@@ -108,7 +110,7 @@ src/
   metrics.py          COCO mAP per stage, thresholded mAP, detection-count check
   train.py            training loop, validation-mAP checkpoint selection, plots
   run_experiments.py  runs experiments × seeds, aggregates, writes results/
-colab_run.ipynb       one-click GPU run on Google Colab
+reproduce_in_colab.ipynb  full reproduction on a Colab GPU
 ```
 
 ## Changes from the original course version
