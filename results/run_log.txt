@@ -1,0 +1,472 @@
+device: Tesla T4 | torch 2.14.1+cu130
+
+[sparse_rcnn] Sparse R-CNN (FPN P2-P4, 3 stages) | train 900 imgs / 1824 objects | val 100 | test 1000
+[sparse_rcnn] seed 42 | 6,003,752 params
+/content/sparse-rcnn-shapes/src/losses.py:58: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  logs["total"] = float(total)
+  epoch  1 | train loss 0.9965 | val mAP 0.0102 * | lr 5.0e-05 | 5.9s
+  epoch  2 | train loss 0.6822 | val mAP 0.0573 * | lr 5.0e-05 | 4.8s
+  epoch  3 | train loss 0.5799 | val mAP 0.1457 * | lr 5.0e-05 | 4.4s
+  epoch  4 | train loss 0.4731 | val mAP 0.2625 * | lr 5.0e-05 | 4.8s
+  epoch  5 | train loss 0.3913 | val mAP 0.2427 | lr 5.0e-05 | 4.5s
+  epoch  6 | train loss 0.3682 | val mAP 0.3857 * | lr 5.0e-05 | 4.4s
+  epoch  7 | train loss 0.3261 | val mAP 0.4293 * | lr 5.0e-05 | 4.8s
+  epoch  8 | train loss 0.3126 | val mAP 0.3966 | lr 5.0e-05 | 4.5s
+  epoch  9 | train loss 0.2809 | val mAP 0.3613 | lr 5.0e-05 | 4.4s
+  epoch 10 | train loss 0.2667 | val mAP 0.5146 * | lr 5.0e-05 | 4.9s
+  epoch 11 | train loss 0.2355 | val mAP 0.4891 | lr 5.0e-05 | 4.4s
+  epoch 12 | train loss 0.2325 | val mAP 0.4658 | lr 5.0e-05 | 4.7s
+  epoch 13 | train loss 0.2189 | val mAP 0.3537 | lr 5.0e-05 | 4.9s
+  epoch 14 | train loss 0.2050 | val mAP 0.4933 | lr 5.0e-05 | 4.5s
+  epoch 15 | train loss 0.1941 | val mAP 0.4116 | lr 5.0e-05 | 4.8s
+  epoch 16 | train loss 0.2058 | val mAP 0.5128 | lr 5.0e-05 | 4.7s
+  epoch 17 | train loss 0.1841 | val mAP 0.5276 * | lr 5.0e-05 | 4.5s
+  epoch 18 | train loss 0.1798 | val mAP 0.3511 | lr 5.0e-05 | 4.9s
+  epoch 19 | train loss 0.1818 | val mAP 0.4842 | lr 5.0e-05 | 4.5s
+  epoch 20 | train loss 0.1770 | val mAP 0.5099 | lr 5.0e-05 | 4.5s
+  epoch 21 | train loss 0.1566 | val mAP 0.5853 * | lr 5.0e-05 | 4.9s
+  epoch 22 | train loss 0.1553 | val mAP 0.6330 * | lr 5.0e-05 | 4.5s
+  epoch 23 | train loss 0.1573 | val mAP 0.3720 | lr 5.0e-05 | 4.8s
+  epoch 24 | train loss 0.1413 | val mAP 0.6314 | lr 5.0e-05 | 4.8s
+  epoch 25 | train loss 0.1308 | val mAP 0.6205 | lr 5.0e-05 | 4.5s
+  epoch 26 | train loss 0.0967 | val mAP 0.7438 * | lr 5.0e-06 | 4.9s
+  epoch 27 | train loss 0.0805 | val mAP 0.7519 * | lr 5.0e-06 | 4.7s
+  epoch 28 | train loss 0.0769 | val mAP 0.7499 | lr 5.0e-06 | 4.5s
+  epoch 29 | train loss 0.0739 | val mAP 0.7509 | lr 5.0e-06 | 5.0s
+  epoch 30 | train loss 0.0730 | val mAP 0.7609 * | lr 5.0e-06 | 4.4s
+  epoch 31 | train loss 0.0712 | val mAP 0.7630 * | lr 5.0e-06 | 4.4s
+  epoch 32 | train loss 0.0704 | val mAP 0.7632 * | lr 5.0e-06 | 5.0s
+  epoch 33 | train loss 0.0684 | val mAP 0.7652 * | lr 5.0e-06 | 4.5s
+  epoch 34 | train loss 0.0682 | val mAP 0.7584 | lr 5.0e-06 | 4.8s
+  epoch 35 | train loss 0.0681 | val mAP 0.7659 * | lr 5.0e-06 | 4.8s
+  epoch 36 | train loss 0.0657 | val mAP 0.7647 | lr 5.0e-06 | 4.5s
+  epoch 37 | train loss 0.0659 | val mAP 0.7699 * | lr 5.0e-06 | 5.0s
+  epoch 38 | train loss 0.0640 | val mAP 0.7622 | lr 5.0e-06 | 4.6s
+  epoch 39 | train loss 0.0630 | val mAP 0.7699 * | lr 5.0e-06 | 4.5s
+  epoch 40 | train loss 0.0619 | val mAP 0.7655 | lr 5.0e-06 | 4.9s
+  epoch 41 | train loss 0.0614 | val mAP 0.7667 | lr 5.0e-06 | 4.5s
+  epoch 42 | train loss 0.0617 | val mAP 0.7667 | lr 5.0e-06 | 4.8s
+  epoch 43 | train loss 0.0592 | val mAP 0.7704 * | lr 5.0e-06 | 4.7s
+  epoch 44 | train loss 0.0589 | val mAP 0.7680 | lr 5.0e-06 | 4.5s
+  epoch 45 | train loss 0.0591 | val mAP 0.7684 | lr 5.0e-06 | 5.1s
+  epoch 46 | train loss 0.0596 | val mAP 0.7632 | lr 5.0e-06 | 4.5s
+  epoch 47 | train loss 0.0600 | val mAP 0.7685 | lr 5.0e-06 | 4.8s
+  epoch 48 | train loss 0.0579 | val mAP 0.7651 | lr 5.0e-06 | 5.0s
+  epoch 49 | train loss 0.0561 | val mAP 0.7698 | lr 5.0e-06 | 4.5s
+  epoch 50 | train loss 0.0554 | val mAP 0.7648 | lr 5.0e-06 | 4.7s
+  epoch 51 | train loss 0.0530 | val mAP 0.7684 | lr 5.0e-07 | 4.9s
+  epoch 52 | train loss 0.0525 | val mAP 0.7713 * | lr 5.0e-07 | 4.5s
+  epoch 53 | train loss 0.0519 | val mAP 0.7722 * | lr 5.0e-07 | 5.0s
+  epoch 54 | train loss 0.0520 | val mAP 0.7721 | lr 5.0e-07 | 4.7s
+  epoch 55 | train loss 0.0519 | val mAP 0.7690 | lr 5.0e-07 | 4.4s
+  epoch 56 | train loss 0.0520 | val mAP 0.7682 | lr 5.0e-07 | 5.0s
+  epoch 57 | train loss 0.0508 | val mAP 0.7703 | lr 5.0e-07 | 4.5s
+  epoch 58 | train loss 0.0514 | val mAP 0.7719 | lr 5.0e-07 | 4.5s
+  epoch 59 | train loss 0.0522 | val mAP 0.7710 | lr 5.0e-07 | 4.9s
+  epoch 60 | train loss 0.0503 | val mAP 0.7714 | lr 5.0e-07 | 4.5s
+  epoch 61 | train loss 0.0505 | val mAP 0.7690 | lr 5.0e-07 | 4.8s
+  epoch 62 | train loss 0.0510 | val mAP 0.7734 * | lr 5.0e-07 | 4.7s
+  epoch 63 | train loss 0.0513 | val mAP 0.7702 | lr 5.0e-07 | 4.5s
+  epoch 64 | train loss 0.0506 | val mAP 0.7689 | lr 5.0e-07 | 4.9s
+  epoch 65 | train loss 0.0515 | val mAP 0.7697 | lr 5.0e-07 | 4.6s
+  epoch 66 | train loss 0.0516 | val mAP 0.7694 | lr 5.0e-07 | 4.6s
+  epoch 67 | train loss 0.0496 | val mAP 0.7714 | lr 5.0e-07 | 4.9s
+  epoch 68 | train loss 0.0503 | val mAP 0.7685 | lr 5.0e-07 | 4.5s
+  epoch 69 | train loss 0.0511 | val mAP 0.7697 | lr 5.0e-07 | 4.5s
+  epoch 70 | train loss 0.0508 | val mAP 0.7677 | lr 5.0e-07 | 5.0s
+  epoch 71 | train loss 0.0501 | val mAP 0.7697 | lr 5.0e-07 | 4.5s
+  epoch 72 | train loss 0.0501 | val mAP 0.7712 | lr 5.0e-07 | 4.9s
+  epoch 73 | train loss 0.0500 | val mAP 0.7713 | lr 5.0e-07 | 4.7s
+  epoch 74 | train loss 0.0497 | val mAP 0.7682 | lr 5.0e-07 | 4.5s
+  epoch 75 | train loss 0.0499 | val mAP 0.7714 | lr 5.0e-07 | 4.9s
+  epoch 76 | train loss 0.0504 | val mAP 0.7710 | lr 5.0e-08 | 4.5s
+  epoch 77 | train loss 0.0495 | val mAP 0.7757 * | lr 5.0e-08 | 4.5s
+  epoch 78 | train loss 0.0491 | val mAP 0.7730 | lr 5.0e-08 | 4.9s
+  epoch 79 | train loss 0.0492 | val mAP 0.7691 | lr 5.0e-08 | 4.5s
+  epoch 80 | train loss 0.0488 | val mAP 0.7707 | lr 5.0e-08 | 4.8s
+  -> best epoch 77/80 | test mAP 0.7881 | mAP50 0.9143 | per stage 0.193, 0.593, 0.788 | exact count 0.65 | 6.8 min
+[sparse_rcnn] seed 43 | 6,003,752 params
+  epoch  1 | train loss 0.9213 | val mAP 0.0213 * | lr 5.0e-05 | 4.8s
+  epoch  2 | train loss 0.6652 | val mAP 0.1272 * | lr 5.0e-05 | 4.9s
+  epoch  3 | train loss 0.5712 | val mAP 0.2520 * | lr 5.0e-05 | 4.4s
+  epoch  4 | train loss 0.5021 | val mAP 0.2395 | lr 5.0e-05 | 4.7s
+  epoch  5 | train loss 0.4330 | val mAP 0.2920 * | lr 5.0e-05 | 4.7s
+  epoch  6 | train loss 0.3953 | val mAP 0.3639 * | lr 5.0e-05 | 4.4s
+  epoch  7 | train loss 0.3490 | val mAP 0.3637 | lr 5.0e-05 | 4.9s
+  epoch  8 | train loss 0.3081 | val mAP 0.3989 * | lr 5.0e-05 | 4.7s
+  epoch  9 | train loss 0.2752 | val mAP 0.5297 * | lr 5.0e-05 | 4.5s
+  epoch 10 | train loss 0.2645 | val mAP 0.3245 | lr 5.0e-05 | 4.9s
+  epoch 11 | train loss 0.2679 | val mAP 0.4145 | lr 5.0e-05 | 4.5s
+  epoch 12 | train loss 0.2514 | val mAP 0.2954 | lr 5.0e-05 | 4.5s
+  epoch 13 | train loss 0.2257 | val mAP 0.4983 | lr 5.0e-05 | 4.9s
+  epoch 14 | train loss 0.2105 | val mAP 0.5887 * | lr 5.0e-05 | 4.5s
+  epoch 15 | train loss 0.2168 | val mAP 0.4774 | lr 5.0e-05 | 4.7s
+  epoch 16 | train loss 0.1983 | val mAP 0.5233 | lr 5.0e-05 | 4.7s
+  epoch 17 | train loss 0.1924 | val mAP 0.5675 | lr 5.0e-05 | 4.4s
+  epoch 18 | train loss 0.1873 | val mAP 0.5069 | lr 5.0e-05 | 4.9s
+  epoch 19 | train loss 0.1815 | val mAP 0.6214 * | lr 5.0e-05 | 4.6s
+  epoch 20 | train loss 0.1744 | val mAP 0.4739 | lr 5.0e-05 | 4.5s
+  epoch 21 | train loss 0.1707 | val mAP 0.4828 | lr 5.0e-05 | 5.0s
+  epoch 22 | train loss 0.1632 | val mAP 0.5505 | lr 5.0e-05 | 4.5s
+  epoch 23 | train loss 0.1607 | val mAP 0.4864 | lr 5.0e-05 | 4.5s
+  epoch 24 | train loss 0.1602 | val mAP 0.4575 | lr 5.0e-05 | 4.9s
+  epoch 25 | train loss 0.1731 | val mAP 0.5741 | lr 5.0e-05 | 4.4s
+  epoch 26 | train loss 0.1165 | val mAP 0.7105 * | lr 5.0e-06 | 4.7s
+  epoch 27 | train loss 0.0963 | val mAP 0.7312 * | lr 5.0e-06 | 4.8s
+  epoch 28 | train loss 0.0902 | val mAP 0.7407 * | lr 5.0e-06 | 4.4s
+  epoch 29 | train loss 0.0869 | val mAP 0.7458 * | lr 5.0e-06 | 4.9s
+  epoch 30 | train loss 0.0855 | val mAP 0.7521 * | lr 5.0e-06 | 4.5s
+  epoch 31 | train loss 0.0828 | val mAP 0.7500 | lr 5.0e-06 | 4.4s
+  epoch 32 | train loss 0.0804 | val mAP 0.7614 * | lr 5.0e-06 | 5.0s
+  epoch 33 | train loss 0.0786 | val mAP 0.7549 | lr 5.0e-06 | 4.4s
+  epoch 34 | train loss 0.0781 | val mAP 0.7669 * | lr 5.0e-06 | 4.5s
+  epoch 35 | train loss 0.0777 | val mAP 0.7570 | lr 5.0e-06 | 4.8s
+  epoch 36 | train loss 0.0753 | val mAP 0.7595 | lr 5.0e-06 | 4.4s
+  epoch 37 | train loss 0.0747 | val mAP 0.7562 | lr 5.0e-06 | 4.6s
+  epoch 38 | train loss 0.0750 | val mAP 0.7519 | lr 5.0e-06 | 4.6s
+  epoch 39 | train loss 0.0719 | val mAP 0.7612 | lr 5.0e-06 | 4.4s
+  epoch 40 | train loss 0.0712 | val mAP 0.7551 | lr 5.0e-06 | 4.8s
+  epoch 41 | train loss 0.0713 | val mAP 0.7658 | lr 5.0e-06 | 4.5s
+  epoch 42 | train loss 0.0710 | val mAP 0.7648 | lr 5.0e-06 | 4.5s
+  epoch 43 | train loss 0.0704 | val mAP 0.7652 | lr 5.0e-06 | 4.8s
+  epoch 44 | train loss 0.0687 | val mAP 0.7564 | lr 5.0e-06 | 4.3s
+  epoch 45 | train loss 0.0672 | val mAP 0.7700 * | lr 5.0e-06 | 4.3s
+  epoch 46 | train loss 0.0678 | val mAP 0.7651 | lr 5.0e-06 | 4.7s
+  epoch 47 | train loss 0.0660 | val mAP 0.7613 | lr 5.0e-06 | 4.4s
+  epoch 48 | train loss 0.0650 | val mAP 0.7623 | lr 5.0e-06 | 4.4s
+  epoch 49 | train loss 0.0650 | val mAP 0.7599 | lr 5.0e-06 | 4.7s
+  epoch 50 | train loss 0.0643 | val mAP 0.7567 | lr 5.0e-06 | 4.3s
+  epoch 51 | train loss 0.0601 | val mAP 0.7603 | lr 5.0e-07 | 4.6s
+  epoch 52 | train loss 0.0597 | val mAP 0.7666 | lr 5.0e-07 | 4.6s
+  epoch 53 | train loss 0.0594 | val mAP 0.7662 | lr 5.0e-07 | 4.3s
+  epoch 54 | train loss 0.0594 | val mAP 0.7727 * | lr 5.0e-07 | 4.8s
+  epoch 55 | train loss 0.0593 | val mAP 0.7617 | lr 5.0e-07 | 4.4s
+  epoch 56 | train loss 0.0592 | val mAP 0.7735 * | lr 5.0e-07 | 4.4s
+  epoch 57 | train loss 0.0587 | val mAP 0.7628 | lr 5.0e-07 | 4.9s
+  epoch 58 | train loss 0.0582 | val mAP 0.7726 | lr 5.0e-07 | 4.5s
+  epoch 59 | train loss 0.0594 | val mAP 0.7603 | lr 5.0e-07 | 4.4s
+  epoch 60 | train loss 0.0600 | val mAP 0.7653 | lr 5.0e-07 | 4.7s
+  epoch 61 | train loss 0.0591 | val mAP 0.7680 | lr 5.0e-07 | 4.4s
+  epoch 62 | train loss 0.0584 | val mAP 0.7665 | lr 5.0e-07 | 4.5s
+  epoch 63 | train loss 0.0599 | val mAP 0.7652 | lr 5.0e-07 | 4.6s
+  epoch 64 | train loss 0.0579 | val mAP 0.7700 | lr 5.0e-07 | 4.2s
+  epoch 65 | train loss 0.0587 | val mAP 0.7728 | lr 5.0e-07 | 4.6s
+  epoch 66 | train loss 0.0582 | val mAP 0.7721 | lr 5.0e-07 | 4.5s
+  epoch 67 | train loss 0.0570 | val mAP 0.7650 | lr 5.0e-07 | 4.3s
+  epoch 68 | train loss 0.0569 | val mAP 0.7751 * | lr 5.0e-07 | 4.6s
+  epoch 69 | train loss 0.0588 | val mAP 0.7692 | lr 5.0e-07 | 4.5s
+  epoch 70 | train loss 0.0571 | val mAP 0.7719 | lr 5.0e-07 | 4.3s
+  epoch 71 | train loss 0.0578 | val mAP 0.7665 | lr 5.0e-07 | 4.7s
+  epoch 72 | train loss 0.0577 | val mAP 0.7682 | lr 5.0e-07 | 4.3s
+  epoch 73 | train loss 0.0574 | val mAP 0.7656 | lr 5.0e-07 | 4.2s
+  epoch 74 | train loss 0.0567 | val mAP 0.7668 | lr 5.0e-07 | 4.6s
+  epoch 75 | train loss 0.0571 | val mAP 0.7663 | lr 5.0e-07 | 4.2s
+  epoch 76 | train loss 0.0567 | val mAP 0.7770 * | lr 5.0e-08 | 4.2s
+  epoch 77 | train loss 0.0569 | val mAP 0.7701 | lr 5.0e-08 | 4.6s
+  epoch 78 | train loss 0.0567 | val mAP 0.7758 | lr 5.0e-08 | 4.3s
+  epoch 79 | train loss 0.0569 | val mAP 0.7662 | lr 5.0e-08 | 4.2s
+  epoch 80 | train loss 0.0568 | val mAP 0.7712 | lr 5.0e-08 | 4.5s
+  -> best epoch 76/80 | test mAP 0.7408 | mAP50 0.8861 | per stage 0.155, 0.515, 0.741 | exact count 0.58 | 6.6 min
+[sparse_rcnn] seed 44 | 6,003,752 params
+  epoch  1 | train loss 0.9855 | val mAP 0.0256 * | lr 5.0e-05 | 4.4s
+  epoch  2 | train loss 0.6929 | val mAP 0.0753 * | lr 5.0e-05 | 4.6s
+  epoch  3 | train loss 0.5744 | val mAP 0.0726 | lr 5.0e-05 | 4.3s
+  epoch  4 | train loss 0.5275 | val mAP 0.1326 * | lr 5.0e-05 | 4.5s
+  epoch  5 | train loss 0.4636 | val mAP 0.2303 * | lr 5.0e-05 | 4.7s
+  epoch  6 | train loss 0.4190 | val mAP 0.2685 * | lr 5.0e-05 | 4.3s
+  epoch  7 | train loss 0.4423 | val mAP 0.0862 | lr 5.0e-05 | 4.5s
+  epoch  8 | train loss 0.3531 | val mAP 0.4029 * | lr 5.0e-05 | 4.5s
+  epoch  9 | train loss 0.3085 | val mAP 0.4821 * | lr 5.0e-05 | 4.4s
+  epoch 10 | train loss 0.2867 | val mAP 0.3700 | lr 5.0e-05 | 4.7s
+  epoch 11 | train loss 0.2829 | val mAP 0.3400 | lr 5.0e-05 | 4.4s
+  epoch 12 | train loss 0.2578 | val mAP 0.5513 * | lr 5.0e-05 | 4.3s
+  epoch 13 | train loss 0.2382 | val mAP 0.4342 | lr 5.0e-05 | 4.7s
+  epoch 14 | train loss 0.2302 | val mAP 0.4746 | lr 5.0e-05 | 4.3s
+  epoch 15 | train loss 0.2297 | val mAP 0.3374 | lr 5.0e-05 | 4.3s
+  epoch 16 | train loss 0.2065 | val mAP 0.4355 | lr 5.0e-05 | 4.7s
+  epoch 17 | train loss 0.1961 | val mAP 0.4554 | lr 5.0e-05 | 4.3s
+  epoch 18 | train loss 0.1974 | val mAP 0.5310 | lr 5.0e-05 | 4.3s
+  epoch 19 | train loss 0.1818 | val mAP 0.5061 | lr 5.0e-05 | 4.7s
+  epoch 20 | train loss 0.1767 | val mAP 0.6119 * | lr 5.0e-05 | 4.3s
+  epoch 21 | train loss 0.1817 | val mAP 0.3554 | lr 5.0e-05 | 4.6s
+  epoch 22 | train loss 0.1753 | val mAP 0.4493 | lr 5.0e-05 | 4.7s
+  epoch 23 | train loss 0.1597 | val mAP 0.5603 | lr 5.0e-05 | 4.3s
+  epoch 24 | train loss 0.1559 | val mAP 0.5595 | lr 5.0e-05 | 4.7s
+  epoch 25 | train loss 0.1549 | val mAP 0.2077 | lr 5.0e-05 | 4.5s
+  epoch 26 | train loss 0.1148 | val mAP 0.6739 * | lr 5.0e-06 | 4.4s
+  epoch 27 | train loss 0.0929 | val mAP 0.7146 * | lr 5.0e-06 | 4.8s
+  epoch 28 | train loss 0.0879 | val mAP 0.7248 * | lr 5.0e-06 | 4.3s
+  epoch 29 | train loss 0.0838 | val mAP 0.7355 * | lr 5.0e-06 | 4.3s
+  epoch 30 | train loss 0.0804 | val mAP 0.7373 * | lr 5.0e-06 | 4.7s
+  epoch 31 | train loss 0.0796 | val mAP 0.7331 | lr 5.0e-06 | 4.3s
+  epoch 32 | train loss 0.0781 | val mAP 0.7390 * | lr 5.0e-06 | 4.3s
+  epoch 33 | train loss 0.0787 | val mAP 0.7422 * | lr 5.0e-06 | 5.0s
+  epoch 34 | train loss 0.0749 | val mAP 0.7384 | lr 5.0e-06 | 4.3s
+  epoch 35 | train loss 0.0754 | val mAP 0.7417 | lr 5.0e-06 | 4.6s
+  epoch 36 | train loss 0.0725 | val mAP 0.7432 * | lr 5.0e-06 | 4.6s
+  epoch 37 | train loss 0.0718 | val mAP 0.7528 * | lr 5.0e-06 | 4.3s
+  epoch 38 | train loss 0.0715 | val mAP 0.7518 | lr 5.0e-06 | 4.7s
+  epoch 39 | train loss 0.0697 | val mAP 0.7526 | lr 5.0e-06 | 4.4s
+  epoch 40 | train loss 0.0699 | val mAP 0.7523 | lr 5.0e-06 | 4.3s
+  epoch 41 | train loss 0.0682 | val mAP 0.7541 * | lr 5.0e-06 | 4.7s
+  epoch 42 | train loss 0.0678 | val mAP 0.7567 * | lr 5.0e-06 | 4.4s
+  epoch 43 | train loss 0.0672 | val mAP 0.7546 | lr 5.0e-06 | 4.3s
+  epoch 44 | train loss 0.0685 | val mAP 0.7612 * | lr 5.0e-06 | 4.8s
+  epoch 45 | train loss 0.0657 | val mAP 0.7611 | lr 5.0e-06 | 4.3s
+  epoch 46 | train loss 0.0655 | val mAP 0.7556 | lr 5.0e-06 | 4.5s
+  epoch 47 | train loss 0.0637 | val mAP 0.7599 | lr 5.0e-06 | 4.7s
+  epoch 48 | train loss 0.0652 | val mAP 0.7552 | lr 5.0e-06 | 4.3s
+  epoch 49 | train loss 0.0649 | val mAP 0.7481 | lr 5.0e-06 | 4.6s
+  epoch 50 | train loss 0.0633 | val mAP 0.7545 | lr 5.0e-06 | 4.7s
+  epoch 51 | train loss 0.0592 | val mAP 0.7586 | lr 5.0e-07 | 4.4s
+  epoch 52 | train loss 0.0586 | val mAP 0.7628 * | lr 5.0e-07 | 4.9s
+  epoch 53 | train loss 0.0573 | val mAP 0.7666 * | lr 5.0e-07 | 4.4s
+  epoch 54 | train loss 0.0583 | val mAP 0.7640 | lr 5.0e-07 | 4.3s
+  epoch 55 | train loss 0.0590 | val mAP 0.7613 | lr 5.0e-07 | 4.7s
+  epoch 56 | train loss 0.0571 | val mAP 0.7621 | lr 5.0e-07 | 4.3s
+  epoch 57 | train loss 0.0592 | val mAP 0.7655 | lr 5.0e-07 | 4.3s
+  epoch 58 | train loss 0.0571 | val mAP 0.7624 | lr 5.0e-07 | 4.7s
+  epoch 59 | train loss 0.0576 | val mAP 0.7663 | lr 5.0e-07 | 4.3s
+  epoch 60 | train loss 0.0566 | val mAP 0.7696 * | lr 5.0e-07 | 4.7s
+  epoch 61 | train loss 0.0573 | val mAP 0.7626 | lr 5.0e-07 | 4.7s
+  epoch 62 | train loss 0.0575 | val mAP 0.7658 | lr 5.0e-07 | 4.3s
+  epoch 63 | train loss 0.0571 | val mAP 0.7669 | lr 5.0e-07 | 4.6s
+  epoch 64 | train loss 0.0554 | val mAP 0.7659 | lr 5.0e-07 | 4.6s
+  epoch 65 | train loss 0.0556 | val mAP 0.7649 | lr 5.0e-07 | 4.3s
+  epoch 66 | train loss 0.0562 | val mAP 0.7616 | lr 5.0e-07 | 4.7s
+  epoch 67 | train loss 0.0575 | val mAP 0.7668 | lr 5.0e-07 | 4.3s
+  epoch 68 | train loss 0.0571 | val mAP 0.7648 | lr 5.0e-07 | 4.3s
+  epoch 69 | train loss 0.0552 | val mAP 0.7695 | lr 5.0e-07 | 4.7s
+  epoch 70 | train loss 0.0567 | val mAP 0.7682 | lr 5.0e-07 | 4.3s
+  epoch 71 | train loss 0.0559 | val mAP 0.7685 | lr 5.0e-07 | 4.3s
+  epoch 72 | train loss 0.0556 | val mAP 0.7679 | lr 5.0e-07 | 4.7s
+  epoch 73 | train loss 0.0560 | val mAP 0.7653 | lr 5.0e-07 | 4.3s
+  epoch 74 | train loss 0.0566 | val mAP 0.7686 | lr 5.0e-07 | 4.2s
+  epoch 75 | train loss 0.0557 | val mAP 0.7665 | lr 5.0e-07 | 4.7s
+  epoch 76 | train loss 0.0549 | val mAP 0.7709 * | lr 5.0e-08 | 4.2s
+  epoch 77 | train loss 0.0549 | val mAP 0.7697 | lr 5.0e-08 | 4.5s
+  epoch 78 | train loss 0.0552 | val mAP 0.7680 | lr 5.0e-08 | 4.6s
+  epoch 79 | train loss 0.0549 | val mAP 0.7687 | lr 5.0e-08 | 4.3s
+  epoch 80 | train loss 0.0539 | val mAP 0.7661 | lr 5.0e-08 | 4.6s
+  -> best epoch 76/80 | test mAP 0.7578 | mAP50 0.8932 | per stage 0.148, 0.544, 0.758 | exact count 0.66 | 6.5 min
+
+| Model | Params | Test mAP@[.5:.95] ↑ | mAP@.5 ↑ | mAP@.75 ↑ | AR@100 ↑ | AP circle / square / triangle | Exact object count ↑ | Selected epoch |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Sparse R-CNN (FPN P2-P4, 3 stages) | 6.00M | 0.762 ± 0.020 | 0.898 ± 0.012 | 0.832 ± 0.020 | 0.846 ± 0.013 | 0.831 / 0.701 / 0.754 | 0.63 ± 0.03 | 77, 76, 76 |
+
+Mean ± std over seeds [42, 43, 44]. Test set: 1,000 freshly generated images (2,020 objects), never used for checkpoint selection (that uses the 100-image validation split). mAP is COCO-style over all 20 detections per image. 'Exact object count' is the share of test images with exactly as many detections above score 0.3 as objects. Hardware: Tesla T4.
+
+
+[single_scale] Single 16x16 feature map (no FPN) | train 900 imgs / 1824 objects | val 100 | test 1000
+[single_scale] seed 42 | 5,679,528 params
+  epoch  1 | train loss 0.9675 | val mAP 0.0055 * | lr 5.0e-05 | 3.3s
+  epoch  2 | train loss 0.6404 | val mAP 0.0663 * | lr 5.0e-05 | 3.5s
+  epoch  3 | train loss 0.5177 | val mAP 0.1751 * | lr 5.0e-05 | 3.5s
+  epoch  4 | train loss 0.4459 | val mAP 0.1886 * | lr 5.0e-05 | 3.3s
+  epoch  5 | train loss 0.3947 | val mAP 0.0809 | lr 5.0e-05 | 3.3s
+  epoch  6 | train loss 0.3496 | val mAP 0.3173 * | lr 5.0e-05 | 3.8s
+  epoch  7 | train loss 0.3307 | val mAP 0.2723 | lr 5.0e-05 | 3.4s
+  epoch  8 | train loss 0.2881 | val mAP 0.4424 * | lr 5.0e-05 | 3.3s
+  epoch  9 | train loss 0.2621 | val mAP 0.2792 | lr 5.0e-05 | 3.3s
+  epoch 10 | train loss 0.2478 | val mAP 0.5287 * | lr 5.0e-05 | 3.9s
+  epoch 11 | train loss 0.2336 | val mAP 0.4432 | lr 5.0e-05 | 3.3s
+  epoch 12 | train loss 0.2245 | val mAP 0.4117 | lr 5.0e-05 | 3.2s
+  epoch 13 | train loss 0.2530 | val mAP 0.0822 | lr 5.0e-05 | 3.6s
+  epoch 14 | train loss 0.2218 | val mAP 0.4437 | lr 5.0e-05 | 3.6s
+  epoch 15 | train loss 0.2091 | val mAP 0.5537 * | lr 5.0e-05 | 3.3s
+  epoch 16 | train loss 0.1828 | val mAP 0.4107 | lr 5.0e-05 | 3.3s
+  epoch 17 | train loss 0.2068 | val mAP 0.1207 | lr 5.0e-05 | 3.9s
+  epoch 18 | train loss 0.1986 | val mAP 0.3479 | lr 5.0e-05 | 3.3s
+  epoch 19 | train loss 0.1792 | val mAP 0.4612 | lr 5.0e-05 | 3.3s
+  epoch 20 | train loss 0.1662 | val mAP 0.5056 | lr 5.0e-05 | 3.3s
+  epoch 21 | train loss 0.1491 | val mAP 0.5514 | lr 5.0e-05 | 3.8s
+  epoch 22 | train loss 0.1467 | val mAP 0.6133 * | lr 5.0e-05 | 3.3s
+  epoch 23 | train loss 0.1358 | val mAP 0.5550 | lr 5.0e-05 | 3.3s
+  epoch 24 | train loss 0.1320 | val mAP 0.5837 | lr 5.0e-05 | 3.9s
+  epoch 25 | train loss 0.1347 | val mAP 0.5907 | lr 5.0e-05 | 3.6s
+  epoch 26 | train loss 0.0942 | val mAP 0.6715 * | lr 5.0e-06 | 3.2s
+  epoch 27 | train loss 0.0831 | val mAP 0.6767 * | lr 5.0e-06 | 3.3s
+  epoch 28 | train loss 0.0787 | val mAP 0.6843 * | lr 5.0e-06 | 3.8s
+  epoch 29 | train loss 0.0775 | val mAP 0.6731 | lr 5.0e-06 | 3.3s
+  epoch 30 | train loss 0.0760 | val mAP 0.6737 | lr 5.0e-06 | 3.3s
+  epoch 31 | train loss 0.0744 | val mAP 0.6855 * | lr 5.0e-06 | 3.5s
+  epoch 32 | train loss 0.0723 | val mAP 0.6769 | lr 5.0e-06 | 3.7s
+  epoch 33 | train loss 0.0716 | val mAP 0.6854 | lr 5.0e-06 | 3.3s
+  epoch 34 | train loss 0.0706 | val mAP 0.6737 | lr 5.0e-06 | 3.3s
+  epoch 35 | train loss 0.0708 | val mAP 0.6733 | lr 5.0e-06 | 3.7s
+  epoch 36 | train loss 0.0682 | val mAP 0.6809 | lr 5.0e-06 | 3.5s
+  epoch 37 | train loss 0.0682 | val mAP 0.6781 | lr 5.0e-06 | 3.3s
+  epoch 38 | train loss 0.0665 | val mAP 0.6789 | lr 5.0e-06 | 3.3s
+  epoch 39 | train loss 0.0675 | val mAP 0.6795 | lr 5.0e-06 | 3.9s
+  epoch 40 | train loss 0.0670 | val mAP 0.6690 | lr 5.0e-06 | 3.3s
+  epoch 41 | train loss 0.0669 | val mAP 0.6747 | lr 5.0e-06 | 3.3s
+  epoch 42 | train loss 0.0643 | val mAP 0.6803 | lr 5.0e-06 | 3.6s
+  epoch 43 | train loss 0.0662 | val mAP 0.6785 | lr 5.0e-06 | 3.7s
+  epoch 44 | train loss 0.0636 | val mAP 0.6676 | lr 5.0e-06 | 3.3s
+  epoch 45 | train loss 0.0634 | val mAP 0.6746 | lr 5.0e-06 | 3.3s
+  epoch 46 | train loss 0.0639 | val mAP 0.6721 | lr 5.0e-06 | 3.9s
+  epoch 47 | train loss 0.0629 | val mAP 0.6688 | lr 5.0e-06 | 3.4s
+  epoch 48 | train loss 0.0622 | val mAP 0.6731 | lr 5.0e-06 | 3.3s
+  epoch 49 | train loss 0.0592 | val mAP 0.6735 | lr 5.0e-06 | 3.3s
+  epoch 50 | train loss 0.0599 | val mAP 0.6746 | lr 5.0e-06 | 3.8s
+  epoch 51 | train loss 0.0578 | val mAP 0.6784 | lr 5.0e-07 | 3.3s
+  early stop: no val mAP improvement for 20 epochs
+  -> best epoch 31/51 | test mAP 0.6764 | mAP50 0.8907 | per stage 0.135, 0.514, 0.676 | exact count 0.65 | 3.4 min
+[single_scale] seed 43 | 5,679,528 params
+  epoch  1 | train loss 0.9970 | val mAP 0.0064 * | lr 5.0e-05 | 3.7s
+  epoch  2 | train loss 0.7269 | val mAP 0.0119 * | lr 5.0e-05 | 3.6s
+  epoch  3 | train loss 0.6265 | val mAP 0.0215 * | lr 5.0e-05 | 3.3s
+  epoch  4 | train loss 0.5223 | val mAP 0.1086 * | lr 5.0e-05 | 3.3s
+  epoch  5 | train loss 0.4426 | val mAP 0.3249 * | lr 5.0e-05 | 3.8s
+  epoch  6 | train loss 0.3935 | val mAP 0.2475 | lr 5.0e-05 | 3.3s
+  epoch  7 | train loss 0.3558 | val mAP 0.3043 | lr 5.0e-05 | 3.3s
+  epoch  8 | train loss 0.3236 | val mAP 0.2522 | lr 5.0e-05 | 3.4s
+  epoch  9 | train loss 0.3085 | val mAP 0.2745 | lr 5.0e-05 | 3.8s
+  epoch 10 | train loss 0.3085 | val mAP 0.3286 * | lr 5.0e-05 | 3.5s
+  epoch 11 | train loss 0.2545 | val mAP 0.3710 * | lr 5.0e-05 | 3.3s
+  epoch 12 | train loss 0.2301 | val mAP 0.2473 | lr 5.0e-05 | 3.8s
+  epoch 13 | train loss 0.2616 | val mAP 0.2870 | lr 5.0e-05 | 3.5s
+  epoch 14 | train loss 0.2345 | val mAP 0.3686 | lr 5.0e-05 | 3.3s
+  epoch 15 | train loss 0.2077 | val mAP 0.4221 * | lr 5.0e-05 | 3.4s
+  epoch 16 | train loss 0.1995 | val mAP 0.3527 | lr 5.0e-05 | 3.9s
+  epoch 17 | train loss 0.2004 | val mAP 0.2762 | lr 5.0e-05 | 3.3s
+  epoch 18 | train loss 0.1936 | val mAP 0.4917 * | lr 5.0e-05 | 3.3s
+  epoch 19 | train loss 0.1974 | val mAP 0.2448 | lr 5.0e-05 | 3.6s
+  epoch 20 | train loss 0.1721 | val mAP 0.5311 * | lr 5.0e-05 | 3.7s
+  epoch 21 | train loss 0.1649 | val mAP 0.3911 | lr 5.0e-05 | 3.3s
+  epoch 22 | train loss 0.1649 | val mAP 0.2641 | lr 5.0e-05 | 3.3s
+  epoch 23 | train loss 0.1541 | val mAP 0.4306 | lr 5.0e-05 | 3.8s
+  epoch 24 | train loss 0.1531 | val mAP 0.4957 | lr 5.0e-05 | 3.4s
+  epoch 25 | train loss 0.1440 | val mAP 0.6045 * | lr 5.0e-05 | 3.3s
+  epoch 26 | train loss 0.0960 | val mAP 0.6697 * | lr 5.0e-06 | 3.3s
+  epoch 27 | train loss 0.0853 | val mAP 0.6651 | lr 5.0e-06 | 3.8s
+  epoch 28 | train loss 0.0813 | val mAP 0.6707 * | lr 5.0e-06 | 3.3s
+  epoch 29 | train loss 0.0789 | val mAP 0.6730 * | lr 5.0e-06 | 3.3s
+  epoch 30 | train loss 0.0776 | val mAP 0.6809 * | lr 5.0e-06 | 3.7s
+  epoch 31 | train loss 0.0754 | val mAP 0.6710 | lr 5.0e-06 | 3.6s
+  epoch 32 | train loss 0.0741 | val mAP 0.6792 | lr 5.0e-06 | 3.3s
+  epoch 33 | train loss 0.0729 | val mAP 0.6856 * | lr 5.0e-06 | 3.3s
+  epoch 34 | train loss 0.0714 | val mAP 0.6792 | lr 5.0e-06 | 3.8s
+  epoch 35 | train loss 0.0718 | val mAP 0.6706 | lr 5.0e-06 | 3.3s
+  epoch 36 | train loss 0.0712 | val mAP 0.6765 | lr 5.0e-06 | 3.3s
+  epoch 37 | train loss 0.0696 | val mAP 0.6817 | lr 5.0e-06 | 3.4s
+  epoch 38 | train loss 0.0696 | val mAP 0.6828 | lr 5.0e-06 | 3.9s
+  epoch 39 | train loss 0.0682 | val mAP 0.6846 | lr 5.0e-06 | 3.3s
+  epoch 40 | train loss 0.0686 | val mAP 0.6802 | lr 5.0e-06 | 3.3s
+  epoch 41 | train loss 0.0666 | val mAP 0.6799 | lr 5.0e-06 | 3.7s
+  epoch 42 | train loss 0.0666 | val mAP 0.6705 | lr 5.0e-06 | 3.6s
+  epoch 43 | train loss 0.0659 | val mAP 0.6812 | lr 5.0e-06 | 3.3s
+  epoch 44 | train loss 0.0656 | val mAP 0.6786 | lr 5.0e-06 | 3.3s
+  epoch 45 | train loss 0.0632 | val mAP 0.6793 | lr 5.0e-06 | 3.8s
+  epoch 46 | train loss 0.0638 | val mAP 0.6850 | lr 5.0e-06 | 3.3s
+  epoch 47 | train loss 0.0621 | val mAP 0.6959 * | lr 5.0e-06 | 3.3s
+  epoch 48 | train loss 0.0622 | val mAP 0.6868 | lr 5.0e-06 | 3.5s
+  epoch 49 | train loss 0.0617 | val mAP 0.6802 | lr 5.0e-06 | 3.7s
+  epoch 50 | train loss 0.0608 | val mAP 0.6902 | lr 5.0e-06 | 3.2s
+  epoch 51 | train loss 0.0578 | val mAP 0.6876 | lr 5.0e-07 | 3.3s
+  epoch 52 | train loss 0.0572 | val mAP 0.6904 | lr 5.0e-07 | 3.7s
+  epoch 53 | train loss 0.0566 | val mAP 0.6908 | lr 5.0e-07 | 3.4s
+  epoch 54 | train loss 0.0570 | val mAP 0.6873 | lr 5.0e-07 | 3.3s
+  epoch 55 | train loss 0.0571 | val mAP 0.6876 | lr 5.0e-07 | 3.3s
+  epoch 56 | train loss 0.0577 | val mAP 0.6895 | lr 5.0e-07 | 3.8s
+  epoch 57 | train loss 0.0564 | val mAP 0.6890 | lr 5.0e-07 | 3.3s
+  epoch 58 | train loss 0.0561 | val mAP 0.6924 | lr 5.0e-07 | 3.3s
+  epoch 59 | train loss 0.0570 | val mAP 0.6899 | lr 5.0e-07 | 3.6s
+  epoch 60 | train loss 0.0569 | val mAP 0.6903 | lr 5.0e-07 | 3.7s
+  epoch 61 | train loss 0.0557 | val mAP 0.6936 | lr 5.0e-07 | 3.3s
+  epoch 62 | train loss 0.0559 | val mAP 0.6871 | lr 5.0e-07 | 3.3s
+  epoch 63 | train loss 0.0563 | val mAP 0.6922 | lr 5.0e-07 | 4.1s
+  epoch 64 | train loss 0.0549 | val mAP 0.6900 | lr 5.0e-07 | 3.3s
+  epoch 65 | train loss 0.0559 | val mAP 0.6872 | lr 5.0e-07 | 3.2s
+  epoch 66 | train loss 0.0559 | val mAP 0.6933 | lr 5.0e-07 | 3.3s
+  epoch 67 | train loss 0.0556 | val mAP 0.6929 | lr 5.0e-07 | 3.8s
+  early stop: no val mAP improvement for 20 epochs
+  -> best epoch 47/67 | test mAP 0.6682 | mAP50 0.8836 | per stage 0.130, 0.511, 0.668 | exact count 0.67 | 4.4 min
+[single_scale] seed 44 | 5,679,528 params
+  epoch  1 | train loss 0.9706 | val mAP 0.0219 * | lr 5.0e-05 | 3.4s
+  epoch  2 | train loss 0.6742 | val mAP 0.0876 * | lr 5.0e-05 | 3.6s
+  epoch  3 | train loss 0.5741 | val mAP 0.1263 * | lr 5.0e-05 | 3.5s
+  epoch  4 | train loss 0.5082 | val mAP 0.2032 * | lr 5.0e-05 | 3.3s
+  epoch  5 | train loss 0.4466 | val mAP 0.1871 | lr 5.0e-05 | 3.3s
+  epoch  6 | train loss 0.3866 | val mAP 0.3417 * | lr 5.0e-05 | 3.8s
+  epoch  7 | train loss 0.3552 | val mAP 0.4445 * | lr 5.0e-05 | 3.4s
+  epoch  8 | train loss 0.3187 | val mAP 0.3202 | lr 5.0e-05 | 3.3s
+  epoch  9 | train loss 0.3064 | val mAP 0.2272 | lr 5.0e-05 | 3.3s
+  epoch 10 | train loss 0.3215 | val mAP 0.4080 | lr 5.0e-05 | 3.8s
+  epoch 11 | train loss 0.2869 | val mAP 0.3965 | lr 5.0e-05 | 3.3s
+  epoch 12 | train loss 0.2620 | val mAP 0.4847 * | lr 5.0e-05 | 3.3s
+  epoch 13 | train loss 0.2503 | val mAP 0.3277 | lr 5.0e-05 | 3.6s
+  epoch 14 | train loss 0.2343 | val mAP 0.4254 | lr 5.0e-05 | 3.6s
+  epoch 15 | train loss 0.2278 | val mAP 0.4378 | lr 5.0e-05 | 3.3s
+  epoch 16 | train loss 0.2154 | val mAP 0.5957 * | lr 5.0e-05 | 3.3s
+  epoch 17 | train loss 0.2096 | val mAP 0.5012 | lr 5.0e-05 | 3.9s
+  epoch 18 | train loss 0.2016 | val mAP 0.5473 | lr 5.0e-05 | 3.3s
+  epoch 19 | train loss 0.1894 | val mAP 0.4428 | lr 5.0e-05 | 3.3s
+  epoch 20 | train loss 0.1831 | val mAP 0.4350 | lr 5.0e-05 | 3.3s
+  epoch 21 | train loss 0.1707 | val mAP 0.4711 | lr 5.0e-05 | 3.8s
+  epoch 22 | train loss 0.1729 | val mAP 0.4730 | lr 5.0e-05 | 3.3s
+  epoch 23 | train loss 0.1842 | val mAP 0.1804 | lr 5.0e-05 | 3.3s
+  epoch 24 | train loss 0.1997 | val mAP 0.1132 | lr 5.0e-05 | 3.6s
+  epoch 25 | train loss 0.1641 | val mAP 0.4924 | lr 5.0e-05 | 3.6s
+  epoch 26 | train loss 0.1248 | val mAP 0.6715 * | lr 5.0e-06 | 3.3s
+  epoch 27 | train loss 0.1023 | val mAP 0.6815 * | lr 5.0e-06 | 3.3s
+  epoch 28 | train loss 0.0967 | val mAP 0.6881 * | lr 5.0e-06 | 3.8s
+  epoch 29 | train loss 0.0948 | val mAP 0.6839 | lr 5.0e-06 | 3.3s
+  epoch 30 | train loss 0.0908 | val mAP 0.6865 | lr 5.0e-06 | 3.3s
+  epoch 31 | train loss 0.0897 | val mAP 0.6904 * | lr 5.0e-06 | 3.4s
+  epoch 32 | train loss 0.0877 | val mAP 0.6912 * | lr 5.0e-06 | 3.9s
+  epoch 33 | train loss 0.0872 | val mAP 0.6827 | lr 5.0e-06 | 3.2s
+  epoch 34 | train loss 0.0855 | val mAP 0.6828 | lr 5.0e-06 | 3.3s
+  epoch 35 | train loss 0.0841 | val mAP 0.6895 | lr 5.0e-06 | 3.7s
+  epoch 36 | train loss 0.0831 | val mAP 0.6822 | lr 5.0e-06 | 3.6s
+  epoch 37 | train loss 0.0817 | val mAP 0.6908 | lr 5.0e-06 | 3.3s
+  epoch 38 | train loss 0.0794 | val mAP 0.6931 * | lr 5.0e-06 | 3.3s
+  epoch 39 | train loss 0.0792 | val mAP 0.6959 * | lr 5.0e-06 | 3.8s
+  epoch 40 | train loss 0.0798 | val mAP 0.6949 | lr 5.0e-06 | 3.3s
+  epoch 41 | train loss 0.0775 | val mAP 0.6885 | lr 5.0e-06 | 3.3s
+  epoch 42 | train loss 0.0769 | val mAP 0.6918 | lr 5.0e-06 | 3.5s
+  epoch 43 | train loss 0.0760 | val mAP 0.6950 | lr 5.0e-06 | 3.7s
+  epoch 44 | train loss 0.0765 | val mAP 0.6913 | lr 5.0e-06 | 3.3s
+  epoch 45 | train loss 0.0755 | val mAP 0.6897 | lr 5.0e-06 | 3.3s
+  epoch 46 | train loss 0.0736 | val mAP 0.6829 | lr 5.0e-06 | 3.7s
+  epoch 47 | train loss 0.0728 | val mAP 0.6908 | lr 5.0e-06 | 3.7s
+  epoch 48 | train loss 0.0736 | val mAP 0.6882 | lr 5.0e-06 | 3.3s
+  epoch 49 | train loss 0.0727 | val mAP 0.6905 | lr 5.0e-06 | 3.3s
+  epoch 50 | train loss 0.0714 | val mAP 0.6820 | lr 5.0e-06 | 3.7s
+  epoch 51 | train loss 0.0680 | val mAP 0.6980 * | lr 5.0e-07 | 3.2s
+  epoch 52 | train loss 0.0659 | val mAP 0.6935 | lr 5.0e-07 | 3.3s
+  epoch 53 | train loss 0.0672 | val mAP 0.6960 | lr 5.0e-07 | 3.5s
+  epoch 54 | train loss 0.0664 | val mAP 0.6932 | lr 5.0e-07 | 3.8s
+  epoch 55 | train loss 0.0667 | val mAP 0.6969 | lr 5.0e-07 | 3.2s
+  epoch 56 | train loss 0.0660 | val mAP 0.6996 * | lr 5.0e-07 | 3.3s
+  epoch 57 | train loss 0.0666 | val mAP 0.6981 | lr 5.0e-07 | 3.7s
+  epoch 58 | train loss 0.0664 | val mAP 0.6985 | lr 5.0e-07 | 3.5s
+  epoch 59 | train loss 0.0667 | val mAP 0.6953 | lr 5.0e-07 | 3.2s
+  epoch 60 | train loss 0.0659 | val mAP 0.6951 | lr 5.0e-07 | 3.3s
+  epoch 61 | train loss 0.0660 | val mAP 0.6960 | lr 5.0e-07 | 3.8s
+  epoch 62 | train loss 0.0660 | val mAP 0.6946 | lr 5.0e-07 | 3.3s
+  epoch 63 | train loss 0.0653 | val mAP 0.6947 | lr 5.0e-07 | 3.3s
+  epoch 64 | train loss 0.0648 | val mAP 0.6963 | lr 5.0e-07 | 3.6s
+  epoch 65 | train loss 0.0646 | val mAP 0.6978 | lr 5.0e-07 | 3.6s
+  epoch 66 | train loss 0.0647 | val mAP 0.6965 | lr 5.0e-07 | 3.3s
+  epoch 67 | train loss 0.0656 | val mAP 0.6923 | lr 5.0e-07 | 3.3s
+  epoch 68 | train loss 0.0662 | val mAP 0.6957 | lr 5.0e-07 | 3.7s
+  epoch 69 | train loss 0.0640 | val mAP 0.6955 | lr 5.0e-07 | 3.4s
+  epoch 70 | train loss 0.0652 | val mAP 0.6944 | lr 5.0e-07 | 3.2s
+  epoch 71 | train loss 0.0660 | val mAP 0.6928 | lr 5.0e-07 | 3.2s
+  epoch 72 | train loss 0.0649 | val mAP 0.6947 | lr 5.0e-07 | 4.0s
+  epoch 73 | train loss 0.0649 | val mAP 0.6910 | lr 5.0e-07 | 3.3s
+  epoch 74 | train loss 0.0667 | val mAP 0.6922 | lr 5.0e-07 | 3.3s
+  epoch 75 | train loss 0.0637 | val mAP 0.6919 | lr 5.0e-07 | 3.5s
+  epoch 76 | train loss 0.0638 | val mAP 0.6953 | lr 5.0e-08 | 3.6s
+  early stop: no val mAP improvement for 20 epochs
+  -> best epoch 56/76 | test mAP 0.6945 | mAP50 0.8861 | per stage 0.127, 0.521, 0.695 | exact count 0.61 | 4.9 min
+
+| Model | Params | Test mAP@[.5:.95] ↑ | mAP@.5 ↑ | mAP@.75 ↑ | AR@100 ↑ | AP circle / square / triangle | Exact object count ↑ | Selected epoch |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Sparse R-CNN (FPN P2-P4, 3 stages) | 6.00M | 0.762 ± 0.020 | 0.898 ± 0.012 | 0.832 ± 0.020 | 0.846 ± 0.013 | 0.831 / 0.701 / 0.754 | 0.63 ± 0.03 | 77, 76, 76 |
+| Single 16x16 feature map (no FPN) | 5.68M | 0.680 ± 0.011 | 0.887 ± 0.003 | 0.768 ± 0.013 | 0.773 ± 0.010 | 0.770 / 0.598 / 0.670 | 0.64 ± 0.03 | 31, 47, 56 |
+
+Mean ± std over seeds [42, 43, 44]. Test set: 1,000 freshly generated images (2,020 objects), never used for checkpoint selection (that uses the 100-image validation split). mAP is COCO-style over all 20 detections per image. 'Exact object count' is the share of test images with exactly as many detections above score 0.3 as objects. Hardware: Tesla T4.
+

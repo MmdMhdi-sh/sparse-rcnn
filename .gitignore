@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# Large / regenerable artefacts (the dataset is generated on the fly)
+results/checkpoints/
+/results/smoke/
+*.pt
+*.zip
+
+# Editors
+.vscode/
+.idea/
